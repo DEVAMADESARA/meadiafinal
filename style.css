@@ -1,0 +1,568 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inter Tight", sans-serif;
+}
+.navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding-inline: 5vw;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+}
+.navbar .navleft{
+    width: 20%;
+    height: inherit;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.navleft img{
+    width: 40%;
+    object-fit: cover;
+    background-position:cover ;
+    background-size: cover;
+}
+.navbar .navcenter{
+    width: 60%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.navcenter a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 520;
+}
+.navcenter a:hover{
+    color: grey;
+}
+.navbar .navright{
+    width: 20%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.navright a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.navright a:hover{
+    color: grey;
+}
+.navright button{
+    width: 54%;
+    height: 55px;
+    background-color: #D6D6D6;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 520;
+}
+.navright button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.navright .ri-menu-line{
+    display: none;
+}
+.main1{
+    width: 100%;
+    height: 400px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main1 .m1{
+    width: 50%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.main1 .m1 h1{
+    font-size: 70px;
+    text-align: center;
+    font-weight: 500;
+}
+.main1 .m1 p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 200;
+}
+.main2{
+    width: 100%;
+    height: auto;
+    padding-inline: 4vw;
+}
+.main2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: cover;
+    background-size: cover;
+}
+.main3{
+    width: 100%;
+    height: 250px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main3 .text{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column; 
+    gap: 10px;
+}
+.main3 .text h2{
+    font-size: 45px;
+    font-weight: 500;
+}
+.main3 .text p{
+    font-size: 17px;
+    color: grey;
+    font-weight: 400;
+}
+.main4{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-inline: 2%;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.main4 .img1{
+    width: 30%;
+    height: 600px;
+    /* border: 1px solid red; */
+}
+.img1 .ii{
+    width: 100%;
+    height: 90%;
+    transition: 1s;
+}
+.img1 .ii img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: cover;
+    background-size: cover;
+}
+.img1 .text{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.img1 .text h1{
+    font-weight: 500;
+}
+.img1:hover .ii{
+    border: 8px solid #FDF567;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+.img1:hover .text{
+    background-color: #FDF567;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+.main-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.main-section .top{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    text-align: center;
+    gap: 20px;
+}
+.top h2{
+    font-size: 50px;
+    font-weight: 450;
+}
+.top p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.main-section2{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  
+    row-gap: 50px; 
+    column-gap: 90px;
+}
+.main-section2 .per{
+    width: 40%;
+    height: 80px;
+    /* border: 1px solid blue; */
+}
+.per .top{
+    width: 95%;
+    height: 80%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+.per .top h6{
+    font-weight: 600;
+}
+.per .bottom{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+.bottom .bleft{
+    width: 95%;
+    height: 100%;
+    background-color: #FDF567;
+    border-top-left-radius:20px ;
+    border-end-start-radius:20px ;
+}
+.bottom .bright{
+    width: 5%;
+    height: 100%;
+    background-color: #FEFCD1;
+    border-end-end-radius: 20px;
+    border-top-right-radius:20px ;
+}
+.bottom #b1{
+    width: 92%;
+    height: 100%;
+    /* border: 5px solid ;    */
+}
+.bottom #b2{
+    width: 8%;
+    height: 100%;
+    /* border: 5px solid blue;    */
+}
+.bottom #c1{
+    width: 97%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+.bottom #c2{
+    width: 3%;
+    height: 100%;
+    /* border: 1px solid ; */
+}
+.bottom #d1{
+    width: 88%;
+    height: 100%;
+    /* border: 5px solid; */
+}
+.bottom #d2{
+    width: 12%;
+    height: 100%;
+    /* border: 1px solid blue; */
+}
+.hero1{
+    width: 100%;
+    height: auto;
+    background-color: #FDF567;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero1 .h1{
+    width: 50%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.hero1 .h1 h1{
+    font-size: 50px;
+    font-weight: 500;
+
+}
+.hero1 .tech{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 3%;
+    flex-wrap: wrap;
+}
+.tech .t1{
+    width: 20%;
+    height: inherit;
+}
+.tech .t1 .top1{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tech .t1 .top1 i{
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    font-size: 40px;
+    background-color: #E3DC5C;
+    border-radius: 10px;
+}
+.tech .t1 .bottom1{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.tech .t1 .bottom1 h6{
+    font-size: 20px;
+    font-weight: 600;
+}
+.tech .t1 .bottom1 p{
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+@media (min-width:970px) and (max-width:1109px) {
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar .navleft img{
+        width: 80%;
+    }
+    .navbar .navcenter{
+        display: none;
+    }
+    .navright .ri-menu-line{
+        display: flex;
+        font-size: 30px;
+    }
+    .navbar .navright{
+        width: 30%;
+    }
+    .navright .button{
+        width: 80%;
+    }
+    .main1{
+        width: 100%;
+    }
+    .main1 .m1{
+        width: 80%;
+    }
+    .main1 .m1 h1{
+        font-size: 68px;
+    } 
+    .main3 .text{
+        width: 70%;
+    }
+    .main3 .text h2{
+        font-size: 38px;
+    }
+    .main3 .text p{
+        font-size: 15px;
+    }
+    .main4{
+        width: 100%;
+    }
+    .main4 .img1{
+        width: 50%;
+        height: auto;
+        padding-inline: 5%;
+    }
+    .main-section .top{
+        width: 70%;
+    }
+    .top h2{
+        font-size: 45px;
+    }
+    .top p{
+        font-size: 18px;
+    }
+    .main-section2 .per{
+        width: 35%;
+    }
+   
+}
+@media (min-width:630px) and (max-width:969px) {
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar .navleft img{
+        width: 90%;
+    }
+    .navbar .navcenter{
+        display: none;
+    }
+    .navright .ri-menu-line{
+        display: flex;
+        font-size: 30px;
+    }
+    .navbar .navright{
+        width: 30%;
+    }
+    .navright button{
+        display: none;
+    }
+    .main1 .m1{
+        width: 90%;
+    }
+    .main1 .m1 h1{
+        font-size: 65px;
+    }
+    .main3 .text{
+        width: 90%;
+    }
+    .main3 .text h2{
+        font-size: 40px;
+    }
+    .main3 .text p{
+        font-size: 15px;
+    }
+    .main4 .img1{
+        width: 50%;
+    }
+    .main4{
+        width: 100%;
+    }
+    .main4 .img1{
+        width: 50%;
+        height: auto;
+        padding-inline: 5%;
+    }
+    .main-section .top{
+        width: 85%;
+    }
+    .top h2{
+        font-size: 40px;
+    }
+    .top p{
+        font-size: 16px;
+    }
+    .main-section2 .per{
+        width: 95%;
+    }
+    .tech .t1{
+        width: 30%;
+    }
+}
+
+@media (min-width:0px) and (max-width:629px) {
+    .navbar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar .navleft{
+        width: 30%;
+    }
+    .navbar .navleft img{
+        width: 100%;
+    }
+    .navbar .navcenter{
+        display: none;
+    }
+    .navright .ri-menu-line{
+        display: flex;
+        font-size: 30px;
+    }
+    .navbar .navright{
+        width: 40%;
+    }
+    .navright button{
+        display: none;
+    }
+    .main1{
+        width: 100%;
+    } 
+    .main1 .m1{
+        width: 100%;
+    }
+    .main1 .m1 h1{
+        font-size: 40px;
+    }
+    .main3 .text{
+        width: 100%;
+    }
+    .main3 .text h2{
+        font-size: 30px;
+    }
+    .main3 .text p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .main4{
+        width: 100%;
+    }
+    .main4 .img1{
+        width: 50%;
+        height: auto;
+        padding-inline: 5%;
+    }
+    .img1 .text h1{
+        font-size: 20px;
+    }
+    .main-section .top{
+        width: 100%;
+    }
+    .top h2{
+        font-size: 30px;
+    }
+    .top p{
+        font-size: 15px;
+    }
+    .main-section2 .per{
+        width: 90%;
+    }
+}
